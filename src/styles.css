@@ -127,6 +127,56 @@ a:focus-visible {
   line-height: 1.25;
 }
 
+.person-details {
+  margin: 1.5rem 0 0;
+}
+
+.person-details div {
+  display: grid;
+  grid-template-columns: minmax(6rem, 30%) 1fr;
+  gap: 0.75rem;
+  padding-block: 0.875rem;
+  border-block-start: 1px solid var(--border);
+}
+
+.person-details dt {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.person-details dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.skeleton-lines {
+  display: grid;
+  gap: 1.5rem;
+  margin-block-start: 1.5rem;
+}
+
+.skeleton-lines span {
+  display: block;
+  inline-size: 70%;
+  block-size: 1rem;
+  border-radius: 0.25rem;
+  background: #e5ece8;
+}
+
+.skeleton-lines span:nth-child(2) {
+  inline-size: 55%;
+}
+
+.skeleton-lines span:nth-child(3) {
+  inline-size: 40%;
+}
+
+.return-link {
+  display: inline-block;
+  margin-block-start: 1rem;
+  font-weight: 600;
+}
+
 @media (max-width: 700px) {
   .people-frame {
     grid-template-columns: 1fr;
